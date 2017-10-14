@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>validate</title>
+<link rel="stylesheet" href="css/reset.css">
+<style>
+#form{margin: 100px 0 0 300px;}
+.item{height: 30px;line-height: 30px;padding: 5px;}
+.item span{display: inline-block;width: 150px;text-align: right;font-size: 20px;}
+.item input{position: relative;display: inline-block;height: 24px;line-height: 24px;padding: 2px 5px;border: 1px solid #aaa;width: 300px;font-size: 18px;}
+.item em{display: inline-block;margin-left: 8px;font-size: 14px;color: #f00;}
+#btn{margin: 30px auto;display: block;cursor: pointer;width: 80px;height: 50px;font-size: 30px;}
+</style>
+</head>
+<body>
+
+<form action="" id="form">
+	<div class="item">
+		<span>用户名：</span>
+		<input placeholder="6-16位数字、字母" type="text" id="username" name="username">
+		<em class="note"></em>
+	</div>
+	<div class="item">
+		<span>密码：</span>
+		<input placeholder="输入6-16位密码" type="text" id="password" name="password">
+		<em class="note"></em>
+	</div>
+	<div class="item">
+		<span>确认密码：</span>
+		<input placeholder="确认密码：" type="text" id="passwordConfirm" name="passwordConfirm">
+		<em class="note"></em>
+	</div>
+	<div class="item">
+		<span>邮箱：</span>
+		<input placeholder="输入正确的邮箱" type="text" id="email" name="email">
+		<em class="note"></em>
+	</div>
+	<div class="item">
+		<span>手机：</span>
+		<input placeholder="输入正确的手机号" type="text" id="tel" name="tel">
+		<em class="note"></em>
+	</div>
+	<!-- <div class="item">
+		<span></span>
+		<input type="text" id="">
+		<em class="note"></em>
+	</div> -->
+</form>
+
+<button id="btn">提交</button>
+
+<script src="js/validate.js"></script>
+<script>
+	
+</script>
+</body>
+</html>
